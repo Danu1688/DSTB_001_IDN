@@ -155,6 +155,32 @@ proxies:
     path: /trojan
     headers:
       Host: vplay.iflix.com
+- name: SvrAtha51_IFLIX_H1
+  type: trojan
+  server: hwvip.iflix.com
+  port: 443
+  password: 2107e838-6b38-4ab7-b08d-400f16b1d2b4
+  udp: true
+  sni: id3.myserver-prem.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: id3.myserver-prem.xyz
+- name: SvrAtha51_IFLIX_H2
+  type: trojan
+  server: vplay.iflix.com
+  port: 443
+  password: 2107e838-6b38-4ab7-b08d-400f16b1d2b4
+  udp: true
+  sni: id3.myserver-prem.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: id3.myserver-prem.xyz
 - name: SvrNusa51_Vision_IP1
   type: trojan
   server: 104.18.225.52
@@ -311,3 +337,29 @@ proxies:
     path: /trojan-ws
     headers:
       Host: vplay.iflix.com
+- name: SvrNusa51_IFLIX_H1
+  type: trojan
+  server: hwvip.iflix.com
+  port: 443
+  password: 63780723-758c-4456-bc8e-13795525fb8a
+  udp: true
+  sni: nusa.dstb.cloud
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan-ws
+    headers:
+      Host: nusa.dstb.cloud
+- name: SvrNusa51_IFLIX_H2
+  type: trojan
+  server: vplay.iflix.com
+  port: 443
+  password: 63780723-758c-4456-bc8e-13795525fb8a
+  udp: true
+  sni: nusa.dstb.cloud
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan-ws
+    headers:
+      Host: nusa.dstb.cloud
